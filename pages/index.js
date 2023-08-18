@@ -6,9 +6,6 @@ import Link from 'next/link'
 import Date from '../components/date'
 
 export default function Home({ allPostsData }) {
-  fetch("http://localhost:3000/api/advice").then(res => res.json()).then(advice => {
-    console.log(advice);
-  })
   return (
     <Layout home>
       <Head>
